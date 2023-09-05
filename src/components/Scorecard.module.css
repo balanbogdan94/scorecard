@@ -1,0 +1,63 @@
+.test {
+  border-collapse: collapse;
+
+  & thead > tr > th {
+    font-size: 14px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(150, 150, 150);
+    font-weight: 300;
+    padding: 0.5rem 0.25rem;
+
+    &:first-child {
+      border: none;
+      background-color: transparent;
+    }
+  }
+
+  .addtitionalRow {
+    & th:not(:first-child) {
+      background-color: rgba(230, 230, 230, 0.5);
+      font-size: 10px;
+      font-family: "Calibri", sans-serif;
+    }
+  }
+
+  & tbody > tr > * {
+    border: 1px solid rgb(150, 150, 150);
+  }
+
+  .low {
+    background-color: rgb(199, 226, 192);
+  }
+
+  .medium {
+    background-color: rgb(247, 233, 181);
+  }
+
+  .high {
+    background-color: rgb(238, 158, 100);
+  }
+
+  .critical {
+    background-color: rgb(205, 76, 70);
+  }
+}
+
+tbody th {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+td {
+  max-width: 24px;
+}
+
+td,
+th {
+  text-align: center;
+}
+
+tbody tr:last-child {
+  height: 100px;
+}
